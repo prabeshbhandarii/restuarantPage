@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+</head>
+<body>
+   <div class="nav-bar">
+      <nav>
+          <ul>
+              <a href="index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+              <li><a class="menu-item" href="index.html">Home</a></li>
+              <li><a class="menu-item" href="">Menu</a></li>
+              <li><a class="menu-item" href="">About US</a></li>
+              <li><a class="menu-item" href="">Contact Us</a></li>
+              <li><a class="menu-item" href="">Login</a></li>
+              <li><a class="menu-item" href="signup.html">SignUp</a></li>
+          </ul>
+      </nav>
+  </div>
+  <div class="container">
+    <div class="text">
+       SIGN UP FOR SPECIAL DISCOUNT EVERY WEEK
+    </div>
+    <form action="/" name="myForm" onsubmit="return validateForm()">
+       <div class="form-row">
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label for="">First Name</label>
+             <span id="error-message"></span>
+          </div>
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label for="">Last Name</label>
+             <span id="error-message"></span>
+          </div>
+       </div>
+       <div class="form-row">
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label for="">Email Address</label>
+             <span id="error-message"></span>
+          </div>
+          <div class="input-data">
+             <input type="text" required name="password">
+             <div class="underline"></div>
+             <label for="">Password</label>
+             <span id="error-message"></span>
+          </div>
+       </div>
+       <div class="form-row">
+         <div class="input-data">
+            <input type="text" required>
+            <div class="underline"></div>
+            <label for="">Address</label>
+            <span id="error-message"></span>
+         </div>
+         <div class="input-data">
+            <input type="text" required>
+            <div class="underline"></div>
+            <label for="">Phone Number</label>
+            <span id="error-message"></span>
+         </div>
+      </div>
+       <div class="form-row">
+       <div class="input-data textarea">
+          <textarea rows="8" cols="80" required></textarea>
+          <br />
+          <div class="underline"></div>
+          <label for="">Write your message</label>
+          <span id="error-message"></span>
+          <br />
+          <div class="form-row submit-btn">
+             <div class="input-data">
+                <div class="inner"></div>
+                <input type="submit" value="submit">
+             </div>
+          </div>
+    </form>
+    </div>
+
+
+</body>
+</html>
